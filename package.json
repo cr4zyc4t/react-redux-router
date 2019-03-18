@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint src --fix"
+    "lint": "npx eslint src --fix",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": "@cr4zyc4t/eslint-config-react-strict",
@@ -39,6 +40,7 @@
     "@cr4zyc4t/eslint-config-react-strict": "^1.0.3",
     "eslint-plugin-redux-saga": "^1.0.0",
     "node-sass": "^4.11.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "source-map-explorer": "^1.8.0"
   }
 }
