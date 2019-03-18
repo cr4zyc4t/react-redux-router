@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Home from "./views/Home";
 import Profile from "./views/Profile";
-import ErrorPage from "./views/Error";
+import ErrorPage from "./views/ErrorPage";
 
 const Header = styled.header`
   position: fixed;

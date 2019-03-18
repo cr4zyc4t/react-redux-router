@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 
 function Capital({ text, setText }) {
-  const inputHanlder = useCallback(e => setText(e.target.value.trim()), []);
+  const inputHanlder = useCallback(e => setText(e.target.value), []);
 
   return (
     <div>
