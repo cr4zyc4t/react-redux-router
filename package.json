@@ -20,7 +20,14 @@
     "lint": "npx eslint src --fix"
   },
   "eslintConfig": {
-    "extends": "@cr4zyc4t/eslint-config-react-strict"
+    "extends": "@cr4zyc4t/eslint-config-react-strict",
+    "plugins": [
+      "redux-saga"
+    ],
+    "rules": {
+      "redux-saga/yield-effects": "error",
+      "redux-saga/no-yield-in-race": "error"
+    }
   },
   "browserslist": [
     ">0.2%",
@@ -30,6 +37,7 @@
   ],
   "devDependencies": {
     "@cr4zyc4t/eslint-config-react-strict": "^1.0.3",
+    "eslint-plugin-redux-saga": "^1.0.0",
     "node-sass": "^4.11.0",
     "react-scripts": "2.1.8"
   }

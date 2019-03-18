@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
@@ -57,9 +58,9 @@ const StyledApp = styled.div`
 `;
 
 const App = () => {
-  function inputHandler(e) {
+  const inputHandler = (e) => {
     console.log(e.target.value);
-  }
+  };
 
   return (
     <StyledApp>
