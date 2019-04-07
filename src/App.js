@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-bind */
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
-import styled from "styled-components";
 
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import ErrorPage from "./views/ErrorPage";
+
+import styled from "styled-components/macro";
 
 const Header = styled.header`
   position: fixed;
